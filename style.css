@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  min-height: 100%;
+  background-color: var(--Light-gray);
+}
+:root {
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--White);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+}
+main article:nth-of-type(1) {
+  height: 300px;
+  border-radius: inherit;
+}
+main article {
+  width: 300px;
+  text-align: center;
+}
+main article:nth-of-type(1) img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+main article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+  padding-bottom: 20px;
+}
+h1 {
+  font-size: 1.4rem;
+}
+p {
+  font-size: 1rem;
+}
